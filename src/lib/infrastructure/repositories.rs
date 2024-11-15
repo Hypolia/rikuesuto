@@ -1,0 +1,1 @@
+pub mod kube_minecraft_cluster_repository;

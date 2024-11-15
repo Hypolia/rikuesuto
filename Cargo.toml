@@ -1,0 +1,23 @@
+[package]
+name = "rikuesuto"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+path = "src/bin/server/main.rs"
+name = "rikuesuto_server"
+
+[lib]
+path = "src/lib/lib.rs"
+name = "rikuesuto"
+
+[dependencies]
+anyhow = "1.0.93"
+axum = "0.7.7"
+k8s-openapi = { version = "0.23.0", features = ["latest"] }
+kube = { version = "0.96.0", features = ["derive", "runtime"] }
+schemars = "0.8.21"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.132"
+tokio = { version = "1.41.1", features = ["full"] }
+tracing = "0.1.40"
