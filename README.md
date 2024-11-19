@@ -18,11 +18,13 @@
 
 <br />
 
-**Rikuesuto** is an open-source Rust microservice designed to manage and create minecraft server and minecraft proxy.
+**Rikuesuto** (リクエスト) is a stateless microservice written in Rust, designed to create on-demand game servers. It offers a simple API for managing the lifecycle of game servers, without maintaining persistent state.
 
 ## ✨ Features
 
-- **Create Minecraft Server**
+- Dynamic creation of game servers.
+- Easy integration with other services, such as `kanri` for state management.
+
 
 
 [rust-image]: https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white
