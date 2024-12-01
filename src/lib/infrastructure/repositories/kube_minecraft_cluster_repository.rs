@@ -4,6 +4,7 @@ use crate::domain::cluster::{
     entities::manifest::MinecraftCluster, ports::MinecraftClusterRepository,
 };
 
+#[derive(Clone)]
 pub struct KubeMinecraftClusterRepository {
     client: Client,
 }
